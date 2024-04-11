@@ -15,6 +15,7 @@
 		4804B6692BC6F4BC00A34F51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B6682BC6F4BC00A34F51 /* User.swift */; };
 		4804B66C2BC7014000A34F51 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B66B2BC7014000A34F51 /* EmptyState.swift */; };
 		4804B66E2BC7EBF300A34F51 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B66D2BC7EBF300A34F51 /* Order.swift */; };
+		4804B6702BC8095E00A34F51 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804B66F2BC8095E00A34F51 /* CustomModifiers.swift */; };
 		481B0EDE2BBD916B00E2E9CF /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481B0EDD2BBD916A00E2E9CF /* AppetizerListViewModel.swift */; };
 		481B0EE02BBD933800E2E9CF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481B0EDF2BBD933800E2E9CF /* Alert.swift */; };
 		481B0EE22BBD9AB800E2E9CF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481B0EE12BBD9AB800E2E9CF /* LoadingView.swift */; };
@@ -42,6 +43,7 @@
 		4804B6682BC6F4BC00A34F51 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4804B66B2BC7014000A34F51 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		4804B66D2BC7EBF300A34F51 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		4804B66F2BC8095E00A34F51 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		481B0EDD2BBD916A00E2E9CF /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		481B0EDF2BBD933800E2E9CF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		481B0EE12BBD9AB800E2E9CF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				481B0EF32BBDB5A200E2E9CF /* Images */,
 				481B0EF22BBDB59700E2E9CF /* Cells */,
 				481B0EF12BBDB58800E2E9CF /* UIKit Components */,
+				4804B66F2BC8095E00A34F51 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				481B0EE62BBDA42C00E2E9CF /* RemoteImage.swift in Sources */,
 				48B710FF2BB6E0BA0002B3D5 /* AppetizersApp.swift in Sources */,
 				481B0EE02BBD933800E2E9CF /* Alert.swift in Sources */,
+				4804B6702BC8095E00A34F51 /* CustomModifiers.swift in Sources */,
 				48D1B1542BB6E332000130B3 /* AppetizerListView.swift in Sources */,
 				48D1B1582BB6E341000130B3 /* OrderView.swift in Sources */,
 			);
@@ -478,8 +482,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,9 +491,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanina.Appetizers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -507,8 +515,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,9 +524,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanina.Appetizers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
